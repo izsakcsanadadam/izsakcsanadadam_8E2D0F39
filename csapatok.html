@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Foci — Csapatok</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Csapatok</h1>
+    <nav>
+      <a href="index.html">Kezdőlap</a>
+      <a href="csapatok.html" class="active">Csapatok</a>
+      <a href="statisztika.html">Statisztika</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Játékosok listája</h2>
+      <ul id="teamList" class="card"></ul>
+      <button id="refreshBtn">Lista frissítése</button>
+    </section>
+
+    <section>
+      <h2>Új játékos hozzáadása</h2>
+      <input id="newPlayerName" placeholder="Név" />
+      <input id="newPlayerGoals" type="number" placeholder="Gólok száma" />
+      <button id="addPlayerBtn">Hozzáad</button>
+      <div id="addResult" class="result"></div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Egyszerű csapatkezelő példa.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Foci — Kezdőlap</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Foci világ</h1>
+    <nav>
+      <a href="index.html" class="active">Kezdőlap</a>
+      <a href="csapatok.html">Csapatok</a>
+      <a href="statisztika.html">Statisztika</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Üdv a Foci világban ⚽</h2>
+      <p>Ez egy egyszerű bemutató oldal a foci témájában. Három oldal: bemutató, csapatlista és statisztika.</p>
+    </section>
+
+    <section>
+      <h3>Gyors keresés játékosnévre</h3>
+      <input id="searchInput" placeholder="Írd be a játékos nevét..." />
+      <button id="searchBtn">Keresés</button>
+      <div id="searchResult" class="result"></div>
+    </section>
+
+    <section>
+      <h3>Összes gól két meccsen</h3>
+    <label>Hazai csapat gól: <input id="num1" type="number" /></label>
+    <label>Vendég csapat gól: <input id="num2" type="number" /></label>
+    <button id="sumBtn">Összesítés</button>
+    <div id="sumResult" class="result"></div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Projekt: foci bemutató — Repo név: teljesenvedkisbetuvel_8E2D0F39</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

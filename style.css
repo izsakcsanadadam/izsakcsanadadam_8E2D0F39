@@ -1,0 +1,51 @@
+:root{
+  --bg: #eaf5ea;
+  --panel: #f7fff7;
+  --accent: #2e8b57;
+  --text: #052018;
+  --muted: #4b6b62;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg, #ecf8ef, #e6f1ea);
+  color:var(--text);
+  line-height:1.4;
+  padding-bottom:40px;
+}
+.site-header{
+  background:var(--accent);
+  color:white;
+  padding:12px 18px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.site-header h1{margin:0;font-size:1.2rem}
+.site-header nav a{
+  color:rgba(255,255,255,0.9);
+  margin-left:12px;
+  text-decoration:none;
+  font-weight:600;
+  padding:6px 8px;
+  border-radius:6px;
+}
+.site-header nav a.active, .site-header nav a:hover{
+  background:rgba(255,255,255,0.12);
+}
+main{max-width:900px;margin:18px auto;padding:12px}
+.hero{background:var(--panel);padding:14px;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,0.04)}
+section{background:var(--panel);margin:14px 0;padding:14px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.04)}
+input,button,select{padding:8px 10px;border-radius:6px;border:1px solid #d7ede0;margin:6px 6px 0 0}
+button{background:var(--accent);color:white;border:none;cursor:pointer}
+button:hover{opacity:0.95}
+.result{margin-top:8px;color:var(--muted)}
+ul#teamList{list-style:none;padding:0;margin:0}
+ul#teamList li{padding:8px;border-bottom:1px dashed #dfeee2}
+footer{text-align:center;margin-top:20px;color:var(--muted)}
+.card{max-height:300px;overflow:auto}
+@media (max-width:600px){
+  .site-header{flex-direction:column;align-items:flex-start}
+  .site-header nav{margin-top:8px}
+}
